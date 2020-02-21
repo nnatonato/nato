@@ -1,82 +1,94 @@
-body{
-    background:rgb(49, 8, 31);
-    
-    font-family:Arial;
+body {
+    background: rgb(49, 8, 31);
+    font-family: Arial;
 }
-.header{
-    margin:10px 10px 2px 10px;
-    background:rgb(0, 0, 0);
-    display:flex;
 
-    padding:25px 25px 25px 50px;
-    
+.header {
+    margin: 10px 10px 2px 10px;
+    background: rgb(0, 0, 0);
+    display: flex;
+    padding: 25px 25px 25px 50px;
+    align-items: center;
+    /* align-items: center; vertikalurad gaacentrebs display: flex is shignit rac aris yvelafers */
 }
-.header div{
-    color:rgb(148, 106, 106);
-    margin-right:100px;
-    padding:0px 15px 0px 15px;
-    
-    
-    text-align:center;
-    width:100%;
-    
+
+.header div {
+    color: rgb(148, 106, 106);
+    /* margin-right: 100px; this line is in .header-add-task-button class [see below] */
+    /* because you dont want every div to be margin-right:100px; but only last one */
+    padding: 0px 15px 0px 15px;
+    text-align: center;
+    /* width: 100%; every div inside .header class can not be width:100%*/
+    flex: 1;
+    /* flex: 1 dayofs am div ebs tol nawilebad. yvelas eqneba proporciulad toli sigane */
+    /* plius flexible da responsive gaxdeba headeri. */
+    /* rom daapataraveb ekrans proporciulad dapataravdeba div ebic */
+    /* mshobels display: flex unda qondes shvilebs flex: 1 */
 }
-.header div button{
-    height:30px;
-    width:100px;
+
+.header-add-task-button {
+    margin-right: 100px;
+    /* radgan am klasiani divi aris .header classhi sul bolo shegidzlia miutito
+    rom .header klasshi bolo div monishno da ise gauwero [qvevit davwer]*/
+    /* daakomentare es margin-right da moxseni komentari qvevita klass da dateste,
+    naxe ro mushaobs */
+    /* dakomentareba an komentaris moxsna ari Ctrl+/ */
+}
+
+
+/* .header div:last-child {
+    margin-right: 100px;
+} */
+
+.header div button {
+    height: 30px;
+    width: 100px;
     border-radius: 25px;
-    background:rgb(148, 106, 106);
-    
-    
+    background: rgb(148, 106, 106);
     border: 2px solid rgb(173, 142, 142);
 }
-.header div button:hover{
-    background:rgb(87, 61, 61);
-}
-.section1{
-    display:flex;
-    
-    margin:0px 10px 2px 10px;
-    background:black;
-    color:rgb(173, 142, 142);
-    padding:25px 25px 25px 50px;
-    height:400px;
-    
 
-    
-
-}
-.section1 ul li{
-    list-style-type:none;
+.header div button:hover {
+    background: rgb(87, 61, 61);
 }
 
-
-.section1 .picture{
-    margin-left:100px;
-    width:540px;
-    height:480px;
-    background-image:url('3.jpg');
-    
+.section1 {
+    display: flex;
+    margin: 0px 10px 2px 10px;
+    background: black;
+    color: rgb(173, 142, 142);
+    padding: 25px 25px 25px 50px;
+    height: 400px;
 }
 
-.section1 button{
-    width:100px;
-    height:30px;
+.section1 ul li {
+    list-style-type: none;
+}
+
+.section1 .picture {
+    margin-left: 100px;
+    width: 540px;
+    height: 480px;
+    background-image: url('3.jpg');
+}
+
+.section1 button {
+    width: 100px;
+    height: 30px;
     border-radius: 25px;
-    background:rgb(148, 106, 106);
-    margin-right:10px;
-    
+    background: rgb(148, 106, 106);
+    margin-right: 10px;
     border: 2px solid rgb(173, 142, 142);
 }
-.section1 button:hover{
-    background:rgb(87, 61, 61);
-}
-.section2{
-    background:black;
-    color:rgb(173, 142, 142);
-    margin:0px 10px 10px 10px;
-    text-align:center;
-    padding:50px 0px 50px 0px;
+
+.section1 button:hover {
+    background: rgb(87, 61, 61);
 }
 
-/* test */
+.section2 {
+    background: black;
+    color: rgb(173, 142, 142);
+    margin: 0px 10px 10px 10px;
+    text-align: center;
+    padding: 50px 0px 50px 0px;
+}
