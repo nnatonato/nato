@@ -21,9 +21,10 @@
             <h1>Add a task!</h1>
         
             <label for="task"><b>Task</b></label>
-            <input type="text" id="task" placeholder="Enter Task" name="task" required>
+            <input type="text" id="task"  placeholder="Enter Task" name="task" required>
+            
         
-            <button type="button" class="btn" onclick="addTask(task)">Submit</button>
+            <button type="button" class="btn" onclick="addTask(task),closeForm()">Submit</button>
             <button type="button" class="cancel" onclick="closeForm()">Close</button>
         </form>
     </div>

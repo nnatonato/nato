@@ -91,32 +91,47 @@ body {
 
 
 .form-popup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    
+    transform: translate(-50%, -50%);
+
+
     display:none;
     position:fixed;
+
     border: 3px solid rgb(173, 142, 142);
 
 }
 .form-container{
-    max-width:300px;
+   
+    max-width:350px;
     padding:10px;
     background-color:gray;
     
 }
 
-.form-container input[type=text]:focus{
+.form-container input[type=text]{
     background-color:white;
     outline:none;
-    padding:15px;
+  
 }
 
+
+
+
 .form-container .btn{
+    padding:10px;
     background-color:rgb(148, 106, 106);
     opacity:0.7;
     color:black;
+   
     text-align:center;
     border:none;
 }
 .form-container .cancel{
+    padding:10px;
     border:none;
     background-color:rgb(87, 61, 61);
     opacity:0.7;
