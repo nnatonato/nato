@@ -25,23 +25,23 @@ function addTask(task) {
 }
 
 function viewList(){
-  // if(document.getElementById("view1").innerHTML=="View List"){
-  //   document.getElementById("myList").style.display="block";
-  //   document.getElementById("view1").innerHTML="Hide list";
-  // }
-  // else{
-  //   document.getElementById("myList").style.display="none";
-  //   document.getElementById("view1").innerHTML="View List";
-  // }
-
-  if (!viewListToggled) {
+  if(document.getElementById("view1").innerHTML=="View List"){
     document.getElementById("myList").style.display="block";
     document.getElementById("view1").innerHTML="Hide list";
-  } else {
+  }
+  else{
     document.getElementById("myList").style.display="none";
     document.getElementById("view1").innerHTML="View List";
   }
+
+  // if (!viewListToggled) {
+  //   document.getElementById("myList").style.display="block";
+  //   document.getElementById("view1").innerHTML="Hide list";
+  // } else {
+  //   document.getElementById("myList").style.display="none";
+  //   document.getElementById("view1").innerHTML="View List";
+  // }
   
-  viewListToggled = !viewListToggled;
+  // viewListToggled = !viewListToggled;
 
 }
